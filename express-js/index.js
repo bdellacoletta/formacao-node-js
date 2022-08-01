@@ -17,6 +17,6 @@ app.listen(8080, function(erro) {
   if(erro){
     console.log("Ocorreu um erro!");
   } else{
-    console.log("Servidor iniciado com sucesso");
+    console.log("Servidor iniciado com sucesso!");
   }
 });
