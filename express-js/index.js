@@ -18,7 +18,12 @@ app.get("/blog/:artigo?", function(req, res){  //Criando rota de blog com parâm
 });
 
 app.get("/canal/youtube", function(req, res){  //Criando rota de canal/youtube(localhost:8080/canal/youtube)
-  res.send("<h1>Bem-vindo ao meu canal!</h1>");
+  var canal = req.query["canal"]; //query sempre é um array
+  if(canal){
+    res.send(canal);
+  } else{
+    res.send("<h2>Nenhum canal fornecido.</h2>");
+  }
 });
 
 app.get("/ola/:nome/:empresa", function(req, res){  //Criando rota de ola com parâmetros obrigatórios 'nome' e 'empresa' (localhost:8080/ola/:nome/:empresa)
