@@ -8,6 +8,10 @@ app.get("/", (req, res) => {
   res.render('index'); //redireciona a página para o arquivo de html
 });
 
+app.get("/perguntar", (req, res) => {
+  res.render('perguntar');
+});
+
 app.listen(8080, () => {
   console.log("servidor rodando...");
 });
