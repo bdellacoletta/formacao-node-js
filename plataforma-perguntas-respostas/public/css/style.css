@@ -1,0 +1,8 @@
+body{
+  background-color: rgb(207, 207, 236);
+}
+
+#formulario-pergunta{
+  margin-top: 5vh;
+}
+/* vh quer dizer altura da tela - então o espaçamento será de 5% da altura da tela */
