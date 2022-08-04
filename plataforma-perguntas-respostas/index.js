@@ -12,6 +12,10 @@ app.get("/perguntar", (req, res) => {
   res.render('perguntar');
 });
 
+app.post("/salvarpergunta", (req, res) => {
+  res.send("formulário recebido");
+});
+
 app.listen(8080, () => {
   console.log("servidor rodando...");
 });
