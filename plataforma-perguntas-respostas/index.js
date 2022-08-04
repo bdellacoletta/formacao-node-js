@@ -17,7 +17,9 @@ app.get("/perguntar", (req, res) => {
 });
 
 app.post("/salvarpergunta", (req, res) => {
-  res.send("formulário recebido");
+  var titulo = req.body.titulo; //pegar dado do formulario - no caso o input chamado titulo
+  var descricao = req.body.descricao;
+  res.send(`Formulário recebido! Título: ${titulo} | Descrição: ${descricao}.` );
 });
 
 app.listen(8080, () => {
